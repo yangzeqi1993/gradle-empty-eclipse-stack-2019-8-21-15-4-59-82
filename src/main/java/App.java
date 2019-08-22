@@ -7,6 +7,19 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    	
+//    	Car car = new Car("引擎", "轮子");
+//        System.out.println(car.start());
+        
+    	SportsCar sportsCar = new SportsCar("引擎", "轮子","车灯");
+        System.out.println(sportsCar.startSportsCar());
+        System.out.println(sportsCar.speedOn());
+        
+        Truck truck = new Truck("引擎", "轮子","负载车厢");
+        System.out.println(truck.load());
+        
+        // story 4 将Car改为抽象类，这样Car本身就不能实例化，但是Car的继承类SportsCar和Truck依然可以。
+        
     }
+    
 }
